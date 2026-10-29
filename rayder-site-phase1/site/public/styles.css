@@ -1,0 +1,44 @@
+/* RAYDER — Phase 1 public site. Black / white / silver, clean like the tier cards. */
+:root{
+  --ink:#111;
+  --paper:#fff;
+  --silver:#c0c0c0;
+  --mist:#f4f4f5;
+  --line:#e3e3e6;
+  --muted:#5c5c60;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3,.nav,.btn,.tag{font-family:Helvetica,Arial,sans-serif}
+a{color:var(--ink)}
+.site-head{background:#0d0d0f;color:#fff;padding:18px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:16px;border-bottom:3px solid var(--silver)}
+.wordmark{font-family:Helvetica,Arial,sans-serif;font-weight:800;letter-spacing:.35em;font-size:22px}
+.wordmark small{display:block;letter-spacing:.18em;font-weight:400;font-size:11px;color:var(--silver)}
+.nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:14px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.nav a{color:#fff;text-decoration:none;opacity:.85}
+.nav a:hover,.nav a.active{opacity:1;text-decoration:underline;text-underline-offset:4px}
+.wrap{max-width:1020px;margin:0 auto;padding:36px 22px 56px}
+.hero{padding:56px 0 30px;text-align:left}
+.hero h1{font-size:52px;margin:0 0 6px;letter-spacing:.12em}
+.hero .tag{color:var(--muted);letter-spacing:.22em;text-transform:uppercase;font-size:13px}
+.hero p.lede{font-size:19px;line-height:1.55;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:26px}
+.card{border:1px solid var(--line);background:var(--paper);padding:26px;border-radius:6px}
+.card h3{margin-top:0}
+.card .price{font-family:Helvetica,Arial,sans-serif;font-size:38px;margin:4px 0}
+.card .per{color:var(--muted);font-family:Helvetica,Arial,sans-serif;font-size:14px}
+.card ul{padding-left:18px;line-height:1.7}
+.btn{display:inline-block;background:#0d0d0f;color:#fff;border:none;padding:13px 30px;border-radius:999px;font-size:15px;cursor:pointer;text-decoration:none}
+.btn.disabled{background:var(--silver);color:#333;cursor:not-allowed}
+.btn.ghost{background:#fff;color:#0d0d0f;border:1.5px solid #0d0d0f}
+.note{background:var(--mist);border:1px solid var(--line);border-radius:6px;padding:16px 18px;line-height:1.55}
+.schedule{border-collapse:collapse;width:100%;font-family:Helvetica,Arial,sans-serif;font-size:15px}
+.schedule td,.schedule th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left}
+footer.site-foot{border-top:1px solid var(--line);padding:22px;text-align:center;color:var(--muted);font-family:Helvetica,Arial,sans-serif;font-size:13px}
+.social-card{display:block;text-decoration:none}
+.social-card .handle{font-family:Helvetica,Arial,sans-serif;color:var(--muted)}
+.empty{border:1.5px dashed var(--silver);border-radius:6px;padding:28px;text-align:center;color:var(--muted)}
+details{border-bottom:1px solid var(--line);padding:14px 2px}
+summary{font-family:Helvetica,Arial,sans-serif;font-weight:700;cursor:pointer}
+input,textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:4px;font-size:15px;margin:6px 0 14px}
+label{font-family:Helvetica,Arial,sans-serif;font-size:14px}

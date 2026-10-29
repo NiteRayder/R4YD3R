@@ -1,0 +1,23 @@
+# RAYDER — Cloudflare Worker config
+# Phase 1: static public site served from ./public via Workers Assets.
+# Phases 2-3 add D1 (accounts/subscriptions) and R2 (vault media) bindings below.
+# DO NOT deploy live without Brook's explicit go — the site is built now and
+# launched later, on her word. Preview locally with: npx wrangler dev
+
+name = "rayder"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# --- Phase 2/3 bindings (uncomment when those phases are built) ---
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "rayder-db"
+# database_id = "TO_BE_CREATED"
+#
+# [[r2_buckets]]
+# binding = "VAULT"
+# bucket_name = "rayder-vault"

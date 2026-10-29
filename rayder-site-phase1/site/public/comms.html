@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAYDER — Comms</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wordmark">RAYDER<small>HOME OF NITERAYDER</small></div>
+  <nav class="nav">
+    <a href="index.html">HQ</a>
+    <a href="about.html">The Rayder File</a>
+    <a href="transmissions.html">Transmissions</a>
+    <a href="signals.html">Signals</a>
+    <a href="memberships.html">Join the Raid</a>
+    <a href="intel.html">Intel</a>
+    <a href="comms.html" class="active">Comms</a>
+  </nav>
+</header>
+<main class="wrap">
+  <h1>Comms</h1>
+  <p style="line-height:1.6">Business inquiries, collabs, and site issues — open a channel below. For video requests and shoutouts, memberships (VIR especially) are the fast lane; this page is for everything else.</p>
+
+  <!-- Phase 1 contact: mailto form (per the original hub plan). Phase 2 can
+       swap this for a real form endpoint. Confirm the inbox address with Brook. -->
+  <form action="mailto:valkyraenightstudios@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Your name</label>
+    <input id="name" name="name" required>
+    <label for="email">Your email</label>
+    <input id="email" name="email" type="email" required>
+    <label for="msg">Message</label>
+    <textarea id="msg" name="message" rows="6" required></textarea>
+    <button class="btn" type="submit">Send</button>
+  </form>
+  <p style="color:var(--muted)">The form opens your email app addressed to the studio inbox — nothing is stored on this site.</p>
+</main>
+<footer class="site-foot">RAYDER — built by Brook (NiteRayder). Memberships open at launch.</footer>
+</body>
+</html>
